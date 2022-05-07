@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+ <meta charset="utf-8">
+ <title>세렌이 옷갈아입히기</title>
+ <style>
+	body{
+	padding: 50px;
+	margin :50px;
+	//background-image:url('꽃이미지2.png');
+	background-color: #FCA9B2;
+	}
+	
+	#warp{
+		width: 1000px;
+		overflow: hidden;
+		padding-top: 10px;
+		background-image:url('배경1.png');
+		background-color: #9FC3F5;
+	}
+
+	div > article{
+		float: left;
+		margin-left: 0px;
+		margin-bottom: 0px;
+	}
+s
+	img{display: block;}
+ </style>
+
+</head>
+
+<body>
+
+
+
+<div id="warp">
+<article> <img id = "body" src = '기본.png' alt = "error" width = 400px onClick = 'reset()'></article>
+<article><img id ="1" src = "전신옷.png" width = 200px onCLick = 'change1()'></article>
+<article><img id = "2" src = "세라옷.png" width = 200px onCLick = 'change2()' ></article>
+<article><img id = "3" src = "메이드옷.png" width = 200px onCLick = 'change3()' ></article>
+<article><img id = "4" src = "겨울옷.png" width = 200px onCLick = 'change4()' ></article>
+<article><img id = "5" src = "체스옷.png" width = 200px onCLick = 'change5()' ></article>
+<article><img id = "6" src = "웨딩옷.png" width = 200px onCLick = 'change6()' ></article>
+
+</div>
+
+
+<script>
+
+
+  function reset(){
+	document.getElementById("body").src = "기본.png";
+}
+
+  function change1(){document.getElementById("body").src = "전신.png";}
+  function change2(){document.getElementById("body").src = "세라.png";}
+  function change3(){document.getElementById("body").src = "메이드.png";}
+  function change4(){document.getElementById("body").src = "겨울사복.png";}
+  function change5(){document.getElementById("body").src = "체스.png";}
+  function change6(){document.getElementById("body").src = "웨딩.png";}	
+
+ </script>
+
+</body>
+</html>
